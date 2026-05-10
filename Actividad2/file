@@ -1,1 +1,29 @@
+## 1 Crear el entorno 
+conda create -n Tema4 -c bioconda -c conda-forge -c defaults -c r fastqc fastp multiqc bwa samtools=1.19 unicycler htslib openjdk=17 bandage quast qualimap prokka
+
+## 2 Activar el entorno 
+conda activate Tema4
+
+## 3 Crear carpetas de trabajo  
+mkdir -p Quality/Raw Quality/Filtered Trimmed
+
+## 4 Ejecutar el analisis
+fastqc *fastq.gz -o Quality/Raw/ -t 32
+
+## 5 # Crear la lista de muestras
+ls *fastq.gz | cut -d _ -f 1 | sort -u > muestras.txt
+
+## 6 Correr el filtrado
+for i in $(cat muestras.txt);
+do fastp --in1 $i*R1* --in2 $i*R2* --out1 Trimmed/$i"_R1_filtered.fastq.gz" --out2 Trimmed/$i"_R2_filtered.fastq.gz" --detect_adapter_for_pe --cut_front --cut_tail --cut_window_size 12 --cut_mean_quality 30 --length_required 35 --json Trimmed/$i.json --html Trimmed/$i.html --thread 32;
+done
+
+## 7 Verificacion y reporte final 
+fastqc Trimmed/*fastq.gz -o Quality/Filtered/ --threads 32
+
+# Reporte MultiQC
+multiqc .
+
+
+
 
