@@ -1,8 +1,10 @@
+#Instalar miniconda y e instalar ubuntu! usaremos obeso 1 y obeso 2, Homero, Abraham, Marge, Patty y Selma
+
 ## 1 Crear el entorno 
-conda create -n Tema4 -c bioconda -c conda-forge -c defaults -c r fastqc fastp multiqc bwa samtools=1.19 unicycler htslib openjdk=17 bandage quast qualimap prokka
+conda create -n Actividad2 -c bioconda -c conda-forge -c defaults -c r fastqc fastp multiqc bwa samtools=1.19 unicycler htslib openjdk=17 bandage quast qualimap prokka
 
 ## 2 Activar el entorno 
-conda activate Tema4
+conda activate Actividad2
 
 ## 3 Crear carpetas de trabajo  
 mkdir -p Quality/Raw Quality/Filtered Trimmed
@@ -23,6 +25,10 @@ fastqc Trimmed/*fastq.gz -o Quality/Filtered/ --threads 32
 
 # Reporte MultiQC
 multiqc .
+
+se crean los archivos automaticamente en el entorno de trabajo
+ojo> seleccionar una carpera designada para la actividad donde tengan los fastqc de los personajes que nos tocan
+
 
 
 
