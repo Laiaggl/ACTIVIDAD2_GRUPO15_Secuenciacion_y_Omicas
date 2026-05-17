@@ -1,0 +1,10 @@
+{
+    "salmon_version": "0.14.1",
+    "index": "Referencia_index",
+    "libType": "A",
+    "mates1": "Actividad_2_SOPG/AbrahamSimpson-FTO_R1.fastq",
+    "mates2": "Actividad_2_SOPG/AbrahamSimpson-GIPR_R2.fastq",
+    "validateMappings": [],
+    "output": "AbrahamSimpson_quant",
+    "auxDir": "aux_info"
+}

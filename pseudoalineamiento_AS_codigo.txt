@@ -1,0 +1,10 @@
+conda create -n rna_seq -c bioconda salmon
+conda activate rna_seq
+salmon index -t /home/carmen-de-la-nuez/Actividad_2_SOPG/Referencia.fasta -i Referencia_index
+salmon quant -i Referencia_index -l A \
+> -1 Actividad_2_SOPG/AbrahamSimpson-FTO_R1.fastq \
+> -2 Actividad_2_SOPG/AbrahamSimpson-GIPR_R2.fastq \
+> --validateMappings \
+> -o AbrahamSimpson_quant
+
+
