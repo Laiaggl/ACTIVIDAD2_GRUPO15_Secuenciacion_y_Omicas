@@ -1,0 +1,9 @@
+{
+    "salmon_version": "1.11.4",
+    "index": "salmon_index",
+    "libType": "A",
+    "mates1": "LisaSimpson_R1.fastq.gz",
+    "mates2": "LisaSimpson_R2.fastq.gz",
+    "output": "Quantified/LisaSimpson",
+    "auxDir": "aux_info"
+}
