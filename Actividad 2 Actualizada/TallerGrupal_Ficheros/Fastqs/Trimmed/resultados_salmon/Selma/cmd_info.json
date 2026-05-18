@@ -1,0 +1,10 @@
+{
+    "salmon_version": "1.10.2",
+    "index": "../../salmon_index",
+    "libType": "A",
+    "mates1": "SelmaBouvier_R1_filtered.fastq.gz",
+    "mates2": "SelmaBouvier_R2_filtered.fastq.gz",
+    "threads": "4",
+    "output": "resultados_salmon/Selma",
+    "auxDir": "aux_info"
+}
