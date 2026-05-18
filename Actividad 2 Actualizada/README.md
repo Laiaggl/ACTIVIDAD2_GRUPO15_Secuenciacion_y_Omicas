@@ -102,4 +102,4 @@ resultados_salmon/Patty/quant.sf
 resultados_salmon/Selma/quant.sf
 
 ## 7. Uso posterior en R
-Los archivos quant.sf fueron importados posteriormente en R mediante tximport y analizados con DESeq2 para realizar el análisis de expresión diferencial. Abrimos RStudio y creamos un nuevo script. (ver script en la carpeta de Trimmed)
+Los archivos quant.sf fueron importados posteriormente en R mediante tximport y analizados con DESeq2 para realizar el análisis de expresión diferencial. Abrimos RStudio y creamos un nuevo script. (ver script en la carpeta de Actividad 2 Actualizada :))
