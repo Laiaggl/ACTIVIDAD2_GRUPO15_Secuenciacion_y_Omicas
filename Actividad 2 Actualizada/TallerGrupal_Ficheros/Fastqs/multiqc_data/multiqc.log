@@ -1,0 +1,130 @@
+[2026-05-17 19:49:25,756] root                                               [DEBUG  ]  Logging to file: /tmp/tmp7pdnvf5w/multiqc.log
+[2026-05-17 19:49:25,761] multiqc.core.update_config                         [DEBUG  ]  This is MultiQC v1.35
+[2026-05-17 19:49:25,761] multiqc.core.update_config                         [DEBUG  ]  Running Python 3.14.4 | packaged by conda-forge | (main, Apr  8 2026, 01:59:35) [GCC 14.3.0]
+[2026-05-17 19:49:25,765] urllib3.connectionpool                             [DEBUG  ]  Starting new HTTPS connection (1): api.multiqc.info:443
+[2026-05-17 19:49:26,576] urllib3.connectionpool                             [DEBUG  ]  https://api.multiqc.info:443 "GET /version?version_multiqc=1.35&version_python=3.14.4&operating_system=Linux&is_docker=False&is_singularity=False&is_conda=True&is_uv=False&is_ci=False&is_notebook=False&ai_summary=False&ai_summary_full=False&ai_provider=seqera HTTP/1.1" 200 178
+[2026-05-17 19:49:26,576] multiqc.core.version_check                         [DEBUG  ]  Latest MultiQC version is v1.34, released 2026-04-21
+[2026-05-17 19:49:26,577] multiqc.multiqc                                    [DEBUG  ]  Working dir : /mnt/c/Users/hp/Desktop/Primer Cuatrimestre/Secuenciacion/Actividades/Actividad2/mubio03_act2/TallerGrupal_Ficheros/Fastqs
+[2026-05-17 19:49:26,577] multiqc.multiqc                                    [DEBUG  ]  Template    : default
+[2026-05-17 19:49:26,581] multiqc.multiqc                                    [DEBUG  ]  Command used: /home/melany/yes/envs/Actividad2/bin/multiqc .
+[2026-05-17 19:49:26,582] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/c/Users/hp/Desktop/Primer Cuatrimestre/Secuenciacion/Actividades/Actividad2/mubio03_act2/TallerGrupal_Ficheros/Fastqs
+[2026-05-17 19:49:26,583] multiqc.core.file_search                           [DEBUG  ]  Analysing modules: bases2fastq, cellranger_arc, cells2stats, deacon, hicstuff, hifi_trimmer, methurator, ribotish, ribowaltz, riker, seqkit, sompy, xenium, custom_content, ccs, ngsderive, purple, conpair, isoseq, lima, peddy, percolator, haplocheck, somalier, methylqa, mosdepth, phantompeakqualtools, qualimap, bamdst, preseq, hifiasm, quast, qorts, rna_seqc, rockhopper, rsem, rseqc, busco, checkm, bustools, goleft_indexcov, gffcompare, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, mirtop, glimpse, gopeaks, homer, hops, macs2, theta2, snpeff, gatk, htseq, bcftools, featurecounts, fgbio, dragen, dragen_fastqc, dedup, pbmarkdup, damageprofiler, mapdamage, biobambam2, jcvi, mtnucratio, picard, vep, bakta, prokka, checkm2, qc3C, nanoq, nanostat, samblaster, samtools, bamtools, sambamba, ngsbits, pairtools, sexdeterrmine, seqera_cli, eigenstratdatabasetools, jellyfish, vcftools, longranger, stacks, varscan2, snippy, umicollapse, umitools, truvari, megahit, sincei, ganon, gtdbtk, bbmap, bismark, biscuit, diamond, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, hostile, cellranger, checkatlas, snpsplit, odgi, vg, pangolin, nextclade, freyja, humid, kat, leehom, librarian, nonpareil, adapterremoval, bbduk, clipandmerge, cutadapt, trim_galore, flexbar, sourmash, kaiju, kraken, malt, motus, trimmomatic, sickle, skewer, sortmerna, biobloomtools, seqfu, fastq_screen, fastqe, afterqc, fastp, fastqc, sequali, filtlong, prinseqplusplus, pychopper, porechop, pycoqc, minionqc, anglerfish, multivcfanalyzer, clusterflow, checkqc, bcl2fastq, bclconvert, interop, ivar, flash, seqyclean, optitype, whatshap, spaceranger, xenome, xengsort, metaphlan, sylphtax, seqwho, telseq, ataqv, mgikit, mosaicatcher, software_versions
+[2026-05-17 19:49:26,583] multiqc.core.file_search                           [DEBUG  ]  Search keys: adapterremoval, afterqc, anglerfish, ataqv, bakta, bamdst, bamtools, bases2fastq, bbduk, bbmap, bcftools, bcl2fastq, bclconvert, biobambam2, biobloomtools, biscuit, bismark, bowtie1, bowtie2, busco, bustools, ccs, cellranger, cellranger_arc, cells2stats, checkatlas, checkm, checkm2, checkqc, clipandmerge, clusterflow, conpair, custom_content, cutadapt, damageprofiler, deacon, dedup, deeptools, diamond, disambiguate, dragen, dragen_fastqc, eigenstratdatabasetools, fastp, fastq_screen, fastqc, fastqe, featurecounts, fgbio, filtlong, flash, flexbar, freyja, ganon, gatk, gffcompare, glimpse, goleft_indexcov, gopeaks, gtdbtk, haplocheck, happy, hicexplorer, hicpro, hicstuff, hicup, hifi_trimmer, hifiasm, hisat2, homer, hops, hostile, htseq, humid, interop, isoseq, ivar, jcvi, jellyfish, kaiju, kallisto, kat, kraken, leehom, librarian, lima, longranger, macs2, malt, mapdamage, megahit, metaphlan, methurator, methylqa, mgikit, minionqc, mirtop, mirtrace, mosaicatcher, mosdepth, motus, mtnucratio, multiqc_data, multivcfanalyzer, nanoq, nanostat, nextclade, ngsbits, ngsderive, nonpareil, odgi, optitype, pairtools, pangolin, pbmarkdup, peddy, percolator, phantompeakqualtools, picard, porechop, preseq, prinseqplusplus, prokka, purple, pychopper, pycoqc, qc3C, qorts, qualimap, quast, ribotish, ribowaltz, riker, rna_seqc, rockhopper, rsem, rseqc, salmon, sambamba, samblaster, samtools, sargasso, seqera_cli, seqfu, seqkit, sequali, seqwho, seqyclean, sexdeterrmine, sickle, sincei, skewer, slamdunk, snippy, snpeff, snpsplit, software_versions, somalier, sompy, sortmerna, sourmash, spaceranger, stacks, star, supernova, sylphtax, telseq, theta2, tophat, trim_galore, trimmomatic, truvari, umicollapse, umitools, varscan2, vcftools, vep, verifybamid, vg, whatshap, xengsort, xenium, xenome
+[2026-05-17 19:49:27,221] multiqc.report                                     [DEBUG  ]  Summary of files that were skipped by the search: |skipped_module_specific_max_filesize: 40|, |skipped_no_match: 36|, |skipped_ignore_pattern: 20|
+[2026-05-17 19:49:27,224] multiqc.core.exec_modules                          [DEBUG  ]  Running module: custom_content
+[2026-05-17 19:49:27,226] multiqc.core.exec_modules                          [DEBUG  ]  No samples found: custom_content
+[2026-05-17 19:49:27,226] multiqc.core.exec_modules                          [DEBUG  ]  Running module: fastp
+[2026-05-17 19:49:27,251] multiqc.modules.fastp.fastp                        [INFO   ]  Found 5 reports
+[2026-05-17 19:49:27,251] multiqc.modules.fastp.fastp                        [DEBUG  ]  No duplication rate plot data: AbrahamSimpson
+[2026-05-17 19:49:27,251] multiqc.modules.fastp.fastp                        [DEBUG  ]  Read quality merged_and_filtered not found: AbrahamSimpson
+[2026-05-17 19:49:27,251] multiqc.modules.fastp.fastp                        [DEBUG  ]  Content curve data merged_and_filtered not found: AbrahamSimpson
+[2026-05-17 19:49:27,251] multiqc.modules.fastp.fastp                        [DEBUG  ]  Overrepresented sequences data merged_and_filtered not found: AbrahamSimpson
+[2026-05-17 19:49:27,252] multiqc.modules.fastp.fastp                        [DEBUG  ]  No duplication rate plot data: HomerSimpson
+[2026-05-17 19:49:27,252] multiqc.modules.fastp.fastp                        [DEBUG  ]  Read quality merged_and_filtered not found: HomerSimpson
+[2026-05-17 19:49:27,252] multiqc.modules.fastp.fastp                        [DEBUG  ]  Content curve data merged_and_filtered not found: HomerSimpson
+[2026-05-17 19:49:27,252] multiqc.modules.fastp.fastp                        [DEBUG  ]  Overrepresented sequences data merged_and_filtered not found: HomerSimpson
+[2026-05-17 19:49:27,252] multiqc.modules.fastp.fastp                        [DEBUG  ]  No duplication rate plot data: MargeSimpson
+[2026-05-17 19:49:27,253] multiqc.modules.fastp.fastp                        [DEBUG  ]  Read quality merged_and_filtered not found: MargeSimpson
+[2026-05-17 19:49:27,253] multiqc.modules.fastp.fastp                        [DEBUG  ]  Content curve data merged_and_filtered not found: MargeSimpson
+[2026-05-17 19:49:27,253] multiqc.modules.fastp.fastp                        [DEBUG  ]  Overrepresented sequences data merged_and_filtered not found: MargeSimpson
+[2026-05-17 19:49:27,253] multiqc.modules.fastp.fastp                        [DEBUG  ]  No duplication rate plot data: PattyBouvier
+[2026-05-17 19:49:27,253] multiqc.modules.fastp.fastp                        [DEBUG  ]  Read quality merged_and_filtered not found: PattyBouvier
+[2026-05-17 19:49:27,253] multiqc.modules.fastp.fastp                        [DEBUG  ]  Content curve data merged_and_filtered not found: PattyBouvier
+[2026-05-17 19:49:27,253] multiqc.modules.fastp.fastp                        [DEBUG  ]  Overrepresented sequences data merged_and_filtered not found: PattyBouvier
+[2026-05-17 19:49:27,253] multiqc.modules.fastp.fastp                        [DEBUG  ]  No duplication rate plot data: SelmaBouvier
+[2026-05-17 19:49:27,254] multiqc.modules.fastp.fastp                        [DEBUG  ]  Read quality merged_and_filtered not found: SelmaBouvier
+[2026-05-17 19:49:27,254] multiqc.modules.fastp.fastp                        [DEBUG  ]  Content curve data merged_and_filtered not found: SelmaBouvier
+[2026-05-17 19:49:27,254] multiqc.modules.fastp.fastp                        [DEBUG  ]  Overrepresented sequences data merged_and_filtered not found: SelmaBouvier
+[2026-05-17 19:49:27,264] multiqc.report                                     [DEBUG  ]  Wrote data file multiqc_fastp.txt
+[2026-05-17 19:49:27,302] multiqc.report                                     [DEBUG  ]  Wrote data file multiqc_fastp.json
+[2026-05-17 19:49:27,357] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp_filtered_reads_plot: found old_data = False
+[2026-05-17 19:49:27,357] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp_filtered_reads_plot: no old data or empty, using new data only
+[2026-05-17 19:49:27,556] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp-duprates-plot: found old_data = False
+[2026-05-17 19:49:27,557] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp-duprates-plot: no old data or empty, using new data only
+[2026-05-17 19:49:27,558] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp-insert-size-plot: found old_data = False
+[2026-05-17 19:49:27,558] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp-insert-size-plot: no old data or empty, using new data only
+[2026-05-17 19:49:27,567] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp-seq-quality-plot: found old_data = False
+[2026-05-17 19:49:27,567] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp-seq-quality-plot: no old data or empty, using new data only
+[2026-05-17 19:49:27,580] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp-seq-content-gc-plot: found old_data = False
+[2026-05-17 19:49:27,580] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp-seq-content-gc-plot: no old data or empty, using new data only
+[2026-05-17 19:49:27,591] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp-seq-content-n-plot: found old_data = False
+[2026-05-17 19:49:27,591] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp-seq-content-n-plot: no old data or empty, using new data only
+[2026-05-17 19:49:27,601] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp_overrepresented_sequences_plot: found old_data = False
+[2026-05-17 19:49:27,601] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp_overrepresented_sequences_plot: no old data or empty, using new data only
+[2026-05-17 19:49:27,601] multiqc.plots.table_object                         [DEBUG  ]  Table key 'samples' not found in data for 'fastp_top_overrepresented_sequences_table'. Skipping. Check for possible typos between data keys and header keys
+[2026-05-17 19:49:27,601] multiqc.plots.table_object                         [DEBUG  ]  Table key 'total_count' not found in data for 'fastp_top_overrepresented_sequences_table'. Skipping. Check for possible typos between data keys and header keys
+[2026-05-17 19:49:27,601] multiqc.plots.table_object                         [DEBUG  ]  Table key 'total_percent' not found in data for 'fastp_top_overrepresented_sequences_table'. Skipping. Check for possible typos between data keys and header keys
+[2026-05-17 19:49:27,601] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp_top_overrepresented_sequences_table: found old_data = False
+[2026-05-17 19:49:27,601] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastp_top_overrepresented_sequences_table: no old data or empty, using new data only
+[2026-05-17 19:49:27,602] multiqc.base_module                                [DEBUG  ]  fastp: deleting attribute self.fastp_data
+[2026-05-17 19:49:27,602] multiqc.base_module                                [DEBUG  ]  fastp: deleting attribute self.fastp_duplication_plotdata
+[2026-05-17 19:49:27,602] multiqc.base_module                                [DEBUG  ]  fastp: deleting attribute self.fastp_insert_size_data
+[2026-05-17 19:49:27,602] multiqc.base_module                                [DEBUG  ]  fastp: deleting attribute self.fastp_all_data
+[2026-05-17 19:49:27,602] multiqc.base_module                                [DEBUG  ]  fastp: deleting attribute self.fastp_qual_plotdata
+[2026-05-17 19:49:27,603] multiqc.base_module                                [DEBUG  ]  fastp: deleting attribute self.fastp_gc_content_data
+[2026-05-17 19:49:27,603] multiqc.base_module                                [DEBUG  ]  fastp: deleting attribute self.fastp_n_content_data
+[2026-05-17 19:49:27,603] multiqc.base_module                                [DEBUG  ]  fastp: deleting attribute self.fastp_overrepresented_sequences
+[2026-05-17 19:49:27,603] multiqc.core.exec_modules                          [DEBUG  ]  Running module: fastqc
+[2026-05-17 19:49:27,641] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 10 reports
+[2026-05-17 19:49:27,642] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_sequence_counts_plot: found old_data = False
+[2026-05-17 19:49:27,642] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_sequence_counts_plot: no old data or empty, using new data only
+[2026-05-17 19:49:27,651] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_per_base_sequence_quality_plot: found old_data = False
+[2026-05-17 19:49:27,651] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_per_base_sequence_quality_plot: no old data or empty, using new data only
+[2026-05-17 19:49:27,658] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_per_sequence_quality_scores_plot: found old_data = False
+[2026-05-17 19:49:27,659] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_per_sequence_quality_scores_plot: no old data or empty, using new data only
+[2026-05-17 19:49:27,671] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_per_sequence_gc_content_plot: found old_data = False
+[2026-05-17 19:49:27,671] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_per_sequence_gc_content_plot: no old data or empty, using new data only
+[2026-05-17 19:49:27,680] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_per_base_n_content_plot: found old_data = False
+[2026-05-17 19:49:27,680] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_per_base_n_content_plot: no old data or empty, using new data only
+[2026-05-17 19:49:27,687] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_sequence_duplication_levels_plot: found old_data = False
+[2026-05-17 19:49:27,687] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_sequence_duplication_levels_plot: no old data or empty, using new data only
+[2026-05-17 19:49:27,693] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_overrepresented_sequences_plot: found old_data = False
+[2026-05-17 19:49:27,693] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_overrepresented_sequences_plot: no old data or empty, using new data only
+[2026-05-17 19:49:27,700] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_top_overrepresented_sequences_table: found old_data = False
+[2026-05-17 19:49:27,700] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_top_overrepresented_sequences_table: no old data or empty, using new data only
+[2026-05-17 19:49:27,736] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_adapter_content_plot: found old_data = False
+[2026-05-17 19:49:27,736] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc_adapter_content_plot: no old data or empty, using new data only
+[2026-05-17 19:49:27,742] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc-status-check-heatmap: found old_data = False
+[2026-05-17 19:49:27,742] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for fastqc-status-check-heatmap: no old data or empty, using new data only
+[2026-05-17 19:49:27,754] multiqc.report                                     [DEBUG  ]  Wrote data file multiqc_fastqc.txt
+[2026-05-17 19:49:27,754] multiqc.report                                     [DEBUG  ]  Wrote data file multiqc_fastqc.json
+[2026-05-17 19:49:27,755] multiqc.base_module                                [DEBUG  ]  fastqc: deleting attribute self.order_of_duplication_levels
+[2026-05-17 19:49:27,756] multiqc.base_module                                [DEBUG  ]  fastqc: deleting attribute self.status_colours
+[2026-05-17 19:49:27,756] multiqc.core.software_versions                     [DEBUG  ]  Reading software versions from config.software_versions
+[2026-05-17 19:49:27,758] multiqc.report                                     [DEBUG  ]  Wrote data file multiqc_software_versions.txt
+[2026-05-17 19:49:27,759] multiqc.core.write_results                         [DEBUG  ]  Rendering plots
+[2026-05-17 19:49:27,776] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for general_stats_table: found old_data = False
+[2026-05-17 19:49:27,776] multiqc.plots.plot                                 [DEBUG  ]  merge_with_previous for general_stats_table: no old data or empty, using new data only
+[2026-05-17 19:49:27,789] multiqc.report                                     [DEBUG  ]  Wrote data file multiqc_general_stats.txt
+[2026-05-17 19:49:27,790] multiqc.report                                     [DEBUG  ]  Wrote data file multiqc_general_stats.json
+[2026-05-17 19:49:27,802] multiqc.core.ai                                    [DEBUG  ]  Saved AI prompt to multiqc_data/llms-full.txt
+[2026-05-17 19:49:27,803] multiqc.core.write_results                         [DEBUG  ]  Exporting plot data to files
+[2026-05-17 19:49:27,804] multiqc.report                                     [DEBUG  ]  Wrote data file fastp_filtered_reads_plot.txt
+[2026-05-17 19:49:27,805] multiqc.report                                     [DEBUG  ]  Wrote data file fastp-insert-size-plot.txt
+[2026-05-17 19:49:27,806] multiqc.report                                     [DEBUG  ]  Wrote data file fastp-seq-quality-plot_Read_1_Before_filtering.txt
+[2026-05-17 19:49:27,807] multiqc.report                                     [DEBUG  ]  Wrote data file fastp-seq-quality-plot_Read_1_After_filtering.txt
+[2026-05-17 19:49:27,808] multiqc.report                                     [DEBUG  ]  Wrote data file fastp-seq-quality-plot_Read_2_Before_filtering.txt
+[2026-05-17 19:49:27,809] multiqc.report                                     [DEBUG  ]  Wrote data file fastp-seq-quality-plot_Read_2_After_filtering.txt
+[2026-05-17 19:49:27,809] multiqc.report                                     [DEBUG  ]  Wrote data file fastp-seq-content-gc-plot_Read_1_Before_filtering.txt
+[2026-05-17 19:49:27,810] multiqc.report                                     [DEBUG  ]  Wrote data file fastp-seq-content-gc-plot_Read_1_After_filtering.txt
+[2026-05-17 19:49:27,811] multiqc.report                                     [DEBUG  ]  Wrote data file fastp-seq-content-gc-plot_Read_2_Before_filtering.txt
+[2026-05-17 19:49:27,812] multiqc.report                                     [DEBUG  ]  Wrote data file fastp-seq-content-gc-plot_Read_2_After_filtering.txt
+[2026-05-17 19:49:27,813] multiqc.report                                     [DEBUG  ]  Wrote data file fastp-seq-content-n-plot_Read_1_Before_filtering.txt
+[2026-05-17 19:49:27,813] multiqc.report                                     [DEBUG  ]  Wrote data file fastp-seq-content-n-plot_Read_1_After_filtering.txt
+[2026-05-17 19:49:27,814] multiqc.report                                     [DEBUG  ]  Wrote data file fastp-seq-content-n-plot_Read_2_Before_filtering.txt
+[2026-05-17 19:49:27,815] multiqc.report                                     [DEBUG  ]  Wrote data file fastp-seq-content-n-plot_Read_2_After_filtering.txt
+[2026-05-17 19:49:27,815] multiqc.report                                     [DEBUG  ]  Wrote data file fastqc_sequence_counts_plot.txt
+[2026-05-17 19:49:27,816] multiqc.report                                     [DEBUG  ]  Wrote data file fastqc_per_base_sequence_quality_plot.txt
+[2026-05-17 19:49:27,816] multiqc.report                                     [DEBUG  ]  Wrote data file fastqc_per_sequence_quality_scores_plot.txt
+[2026-05-17 19:49:27,818] multiqc.report                                     [DEBUG  ]  Wrote data file fastqc_per_sequence_gc_content_plot_Percentages.txt
+[2026-05-17 19:49:27,819] multiqc.report                                     [DEBUG  ]  Wrote data file fastqc_per_sequence_gc_content_plot_Counts.txt
+[2026-05-17 19:49:27,819] multiqc.report                                     [DEBUG  ]  Wrote data file fastqc_per_base_n_content_plot.txt
+[2026-05-17 19:49:27,820] multiqc.report                                     [DEBUG  ]  Wrote data file fastqc_sequence_duplication_levels_plot.txt
+[2026-05-17 19:49:27,820] multiqc.report                                     [DEBUG  ]  Wrote data file fastqc_overrepresented_sequences_plot.txt
+[2026-05-17 19:49:27,820] multiqc.report                                     [DEBUG  ]  Wrote data file fastqc_top_overrepresented_sequences_table.txt
+[2026-05-17 19:49:27,820] multiqc.report                                     [DEBUG  ]  Wrote data file fastqc_adapter_content_plot.txt
+[2026-05-17 19:49:27,821] multiqc.report                                     [DEBUG  ]  Wrote data file fastqc-status-check-heatmap.txt
+[2026-05-17 19:49:27,821] multiqc.core.write_results                         [DEBUG  ]  Moving data file from '/tmp/tmp7pdnvf5w/multiqc_data' to '/mnt/c/Users/hp/Desktop/Primer Cuatrimestre/Secuenciacion/Actividades/Actividad2/mubio03_act2/TallerGrupal_Ficheros/Fastqs/multiqc_data'
+[2026-05-17 19:49:28,231] multiqc.core.write_results                         [INFO   ]  Data        : multiqc_data
+[2026-05-17 19:49:28,285] multiqc.core.write_results                         [DEBUG  ]  Compressing plot data
+[2026-05-17 19:49:28,454] multiqc.core.write_results                         [INFO   ]  Report      : multiqc_report.html
