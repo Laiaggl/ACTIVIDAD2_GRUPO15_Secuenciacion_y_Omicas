@@ -1,5 +1,5 @@
 {
-    "salmon_version": "1.11.4",
+    "salmon_version": "1.10.3",
     "samp_type": "none",
     "opt_type": "vb",
     "quant_errors": [],
@@ -8,8 +8,8 @@
         "IU"
     ],
     "frag_dist_length": 1001,
-    "frag_length_mean": 211.60863981312603,
-    "frag_length_sd": 143.0480252405428,
+    "frag_length_mean": 166.77725527640514,
+    "frag_length_sd": 112.48524423670939,
     "seq_bias_correct": false,
     "gc_bias_correct": false,
     "num_bias_bins": 4096,
@@ -17,7 +17,7 @@
     "keep_duplicates": false,
     "num_valid_targets": 679,
     "num_decoy_targets": 0,
-    "num_eq_classes": 451,
+    "num_eq_classes": 484,
     "serialized_eq_classes": false,
     "eq_class_properties": [
         "range_factorized",
@@ -40,11 +40,11 @@
     "num_processed": 1328,
     "num_mapped": 1328,
     "num_decoy_fragments": 0,
-    "num_dovetail_fragments": 214,
+    "num_dovetail_fragments": 47,
     "num_fragments_filtered_vm": 0,
-    "num_alignments_below_threshold_for_mapped_fragments_vm": 4,
+    "num_alignments_below_threshold_for_mapped_fragments_vm": 54,
     "percent_mapped": 100.0,
     "call": "quant",
-    "start_time": "Sun May 10 17:11:42 2026",
-    "end_time": "Sun May 10 17:11:43 2026"
+    "start_time": "Wed May 20 19:13:41 2026",
+    "end_time": "Wed May 20 19:13:41 2026"
 }

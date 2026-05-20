@@ -1,9 +1,9 @@
 {
-    "salmon_version": "1.11.4",
+    "salmon_version": "1.10.3",
     "index": "salmon_index",
     "libType": "A",
-    "mates1": "MargeSimpson_R1.fastq.gz",
-    "mates2": "MargeSimpson_R2.fastq.gz",
+    "mates1": "Trimmed/MargeSimpson_R1_filtered.fastq.gz",
+    "mates2": "Trimmed/MargeSimpson_R2_filtered.fastq.gz",
     "output": "Quantified/MargeSimpson",
     "auxDir": "aux_info"
 }

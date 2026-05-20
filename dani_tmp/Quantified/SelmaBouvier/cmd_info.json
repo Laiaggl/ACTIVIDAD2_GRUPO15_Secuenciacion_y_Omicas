@@ -1,9 +1,9 @@
 {
-    "salmon_version": "1.11.4",
+    "salmon_version": "1.10.3",
     "index": "salmon_index",
     "libType": "A",
-    "mates1": "SelmaBouvier_R1.fastq.gz",
-    "mates2": "SelmaBouvier_R2.fastq.gz",
+    "mates1": "Trimmed/SelmaBouvier_R1_filtered.fastq.gz",
+    "mates2": "Trimmed/SelmaBouvier_R2_filtered.fastq.gz",
     "output": "Quantified/SelmaBouvier",
     "auxDir": "aux_info"
 }
