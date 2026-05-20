@@ -1,0 +1,84 @@
+
+
+#### 1. Creamos un entorno con los programas que vamos a utilizar, como fastqc, fastp, multiqc...
+
+(base) MacBook-Sara:~ sara$ conda create -n Actividad2 -c bioconda -c conda-forge -c defaults fastqc fastp multiqc salmon r-base
+
+(base) MacBook-Sara:~ sara$ conda activate Actividad2
+
+(Actividad2) MacBook-Sara:~ sara$ cd ~/Desktop/SeqOAct2
+
+
+#### 2. En esta primera parte de control de calidad y filtrado, vamos a comenzar creando las carpetas que necesitaremos en un primer momento:
+
+(Actividad2) MacBook-Sara:SeqOAct2 sara$ mkdir -p Quality/Raw Quality/Filtered Trimmed
+
+
+#### 3. Realizamos el control de calidad con FastQC:
+
+(Actividad2) MacBook-Sara:SeqOAct2 sara$ fastqc *.fastq.gz -o Quality/Raw/ -t 8
+
+
+#### 4. Ejecutamos el filtrado de secuencias por calidad y longitud
+
+
+(Actividad2) MacBook-Sara:SeqOAct2 sara$ ls *fastq.gz | cut -d _ -f 1 | sort -u > muestras_raw.txt
+
+(Actividad2) MacBook-Sara:SeqOAct2 sara$ 
+for i in $(cat muestras_raw.txt); do
+fastp \
+--in1 ${i}_R1.fastq.gz \
+--in2 ${i}_R2.fastq.gz \
+--out1 Trimmed/${i}_R1_filtered.fastq.gz \
+--out2 Trimmed/${i}_R2_filtered.fastq.gz \
+--detect_adapter_for_pe \
+--cut_front \
+--cut_tail \
+--cut_window_size 12 \
+--cut_mean_quality 30 \
+--length_required 35 \
+--json Trimmed/${i}.json \
+--html Trimmed/${i}.html \
+--thread 8
+done
+
+#### 5. Ejecutamos de nuevo un segundo control de calidad para corroborar que hemos realizado correctamente el filtrado
+
+(Actividad2) MacBook-Sara:SeqOAct2 sara$ fastqc Trimmed/*fastq.gz -o Quality/Filtered/ --threads 8
+
+
+#### 6. Podemos generar un informe resumen de los pasos que hemos realizado con multiqc pro y post filtrado:
+
+(Actividad2) MacBook-Sara:SeqOAct2 sara$ multiqc .
+
+
+#########################################################################################################
+
+
+#### 7. Indexamos la secuencia de referencia.
+
+(Actividad2) MacBook-Sara:SeqOAct2 sara$ salmon index -t Referencia.fasta -i salmon_index
+
+
+#### 8. Alineamos & Cuantificamos con Salmon 
+
+(Actividad2) MacBook-Sara:SeqOAct2 sara$ mkdir -p Salmon
+
+(Actividad2) MacBook-Sara:SeqOAct2 sara$ for i in $(cat muestras_raw.txt); do
+> salmon quant \
+> -i salmon_index \
+> -l A \
+> -1 Trimmed/${i}_R1_filtered.fastq.gz \
+> -2 Trimmed/${i}_R2_filtered.fastq.gz \
+> -p 8 \
+> -o Salmon/${i}
+> done
+
+#### 9. Comprobamos mapping_rate para las muestras alineadas (es el mismo antes y después de filtrar)
+
+(Actividad2) MacBook-Sara:SeqOAct2 sara$ for i in $(cat muestras_raw.txt); do echo -n "${i}: " >> mapping_rates.txt; grep "Mapping rate" Salmon/${i}/logs/salmon_quant.log >> mapping_rates.txt; done
+(Actividad2) MacBook-Sara:SeqOAct2 sara$ cat mapping_rates.txt
+
+
+
+
