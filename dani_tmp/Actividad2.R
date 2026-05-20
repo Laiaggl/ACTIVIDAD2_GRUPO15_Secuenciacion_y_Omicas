@@ -163,3 +163,18 @@ plot_reactome
 ego_bp_symbol <- setReadable(ego_bp, OrgDb = org.Hs.eg.db, keyType = "ENTREZID")
 plot_cnet <- cnetplot(ego_bp_symbol, showCategory = 20)
 plot_cnet
+
+
+paquetes <- c(
+  "tximport", "dplyr", "DESeq2", "EnhancedVolcano", 
+  "pheatmap", "clusterProfiler", "org.Hs.eg.db", 
+  "ReactomePA", "enrichplot", "flextable", "tibble"
+)
+
+# Create a data frame with the package names and their active versions
+versiones <- data.frame(
+  Paquete = paquetes,
+  Version = sapply(paquetes, function(p) as.character(packageVersion(p)))
+)
+
+print(versiones, row.names = FALSE)
