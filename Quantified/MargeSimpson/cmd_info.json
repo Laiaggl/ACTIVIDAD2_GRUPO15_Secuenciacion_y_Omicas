@@ -1,0 +1,10 @@
+{
+    "salmon_version": "1.11.4",
+    "index": "/home/chuan/Actividad2/TallerGrupal_Ficheros/salmon_index",
+    "libType": "A",
+    "mates1": "MargeSimpson_R1_filtered.fastq.gz",
+    "mates2": "MargeSimpson_R2_filtered.fastq.gz",
+    "threads": "8",
+    "output": "/home/chuan/Actividad2/TallerGrupal_Ficheros/Quantified/MargeSimpson",
+    "auxDir": "aux_info"
+}

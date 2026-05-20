@@ -1,0 +1,10 @@
+{
+    "salmon_version": "1.11.4",
+    "index": "/home/chuan/Actividad2/TallerGrupal_Ficheros/salmon_index",
+    "libType": "A",
+    "mates1": "PattyBouvier_R1_filtered.fastq.gz",
+    "mates2": "PattyBouvier_R2_filtered.fastq.gz",
+    "threads": "8",
+    "output": "/home/chuan/Actividad2/TallerGrupal_Ficheros/Quantified/PattyBouvier",
+    "auxDir": "aux_info"
+}
