@@ -1,0 +1,9 @@
+{
+    "salmon_version": "1.10.3",
+    "index": "indice_transcriptoma",
+    "libType": "A",
+    "mates1": "Trimmed/PattyBouvier_R1_filtered.fastq.gz",
+    "mates2": "Trimmed/PattyBouvier_R2_filtered.fastq.gz",
+    "output": "Mapped/PattyBouvier",
+    "auxDir": "aux_info"
+}
