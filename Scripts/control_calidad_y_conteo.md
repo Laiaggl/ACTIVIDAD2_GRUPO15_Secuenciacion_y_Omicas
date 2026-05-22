@@ -1,5 +1,5 @@
 # Creación del entorno conda
-conda create -vv -n Actividad2 -c bioconda -c conda-forge -c defaults -c r fastqc fastp multiqc
+conda create -vv -n Actividad2 -c bioconda -c conda-forge -c defaults -c r fastqc fastp multiqc salmon=1.10.3
 conda activate Actividad2
 
 # Carpetas de soporte
