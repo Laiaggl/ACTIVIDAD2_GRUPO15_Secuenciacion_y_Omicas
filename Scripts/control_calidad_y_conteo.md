@@ -1,4 +1,3 @@
-# Nota importante
 > [!WARNING]
 Estos comandos fueron desarrollados y probados considerando su ejecución en la raíz del proyecto. Si deseas ejecutarlos en otra carpeta, por favor, realiza los ajustes correspondientes en las rutas de los archivos y carpetas.
 
