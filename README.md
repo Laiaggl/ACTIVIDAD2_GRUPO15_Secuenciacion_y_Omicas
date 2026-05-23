@@ -26,3 +26,7 @@ El repositorio está organizado en las siguientes carpetas principales:
 * **Scripts:** Alberga las directrices de ejecución de control de calidad, filtrado y conteo y el código R para análisis estadístico de expresión diferencial y enriquecimiento. Esta carpeta tiene sus propias instrucciones en su archivo [README.md](./Scripts/README.md).
 * **Gráficos:** Reúne las salidas visuales del análisis, tales como diagramas de volcán (Volcano Plot), mapas de calor (Heatmap) y gráficos de puntos de enriquecimiento (Dotplot), para una rápida visualización.
 
+## Discussión y Resultados del estudio
+
+La discussión y resultados obtenidos del estudio se pueden visualizar a través del [poster.pdf](./poster.pdf). 
+

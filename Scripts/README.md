@@ -2,6 +2,9 @@
 
 Este directorio contiene las herramientas y flujos de trabajo necesarios para procesar los datos de secuenciación crudos de RNA-seq hasta la obtención de perfiles de expresión diferencial y su posterior análisis de enriquecimiento funcional.
 
+> [!WARNING]
+Estos comandos fueron desarrollados para seren ejecutados en cadena, de una forma en que la salida del comando actual suele ser la entrada del próximo. De la misma manera, la salida de las instrucciones del archivo [`control_calidad_y_conteo.md`](./control_calidad_y_conteo.md) es la entrada para el script [`visualizacion_genes.R`](./visualizacion_genes.R). Por lo tanto, es fundamental ejecutarlos en orden.
+
 ---
 
 ## Flujo de Trabajo y Contenido
@@ -9,7 +12,7 @@ Este directorio contiene las herramientas y flujos de trabajo necesarios para pr
 El análisis se divide en dos fases consecutivas y complementarias:
 
 ### Fase 1: Control de Calidad, Filtrado y Cuantificación
-* **Script:** [`control_calidad_y_conteo.md`](./control_calidad_y_conteo.md)
+* **Instrucciones:** [`control_calidad_y_conteo.md`](./control_calidad_y_conteo.md)
 * **Objetivo:** Preparar los datos crudos y cuantificar los transcritos.
 * **Herramientas utilizadas (Entorno Conda):**
   * `FastQC`: Control de calidad visual de las lecturas crudas y filtradas.
