@@ -2,6 +2,11 @@
 
 Este directorio contiene un flujo de trabajo automatizado con **Nextflow** y **Docker** para realizar el control de calidad, filtrado y cuantificación de lecturas de RNA-Seq.
 
+## Requisitos previos
+Es necesario instalar los siguientes programas para la correcta ejecución del flujo de trabajo:
+- Docker
+- Nextflow
+
 ## Flujo del Pipeline
 Los pasos abajo son ejecutados en cadena a través del archivo [`main.nf`](./main.nf). 
 
