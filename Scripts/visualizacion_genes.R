@@ -31,12 +31,13 @@ for (p in paquetes) {
   }
 }
 
+# Estes archivos son la salida de la pipeline. Es necesario verificar su existencia y ubicación, dependiendo de donde se ejecute el script.
 rnaseq_sf <- c(
-  "Quantified/AbrahamSimpson/quant.sf",
-  "Quantified/HomerSimpson/quant.sf",
-  "Quantified/MargeSimpson/quant.sf",
-  "Quantified/PattyBouvier/quant.sf",
-  "Quantified/SelmaBouvier/quant.sf"
+  "../Pipeline/Resultados/Quantified/AbrahamSimpson/quant.sf",
+  "../Pipeline/Resultados/Quantified/HomerSimpson/quant.sf",
+  "../Pipeline/Resultados/Quantified/MargeSimpson/quant.sf",
+  "../Pipeline/Resultados/Quantified/PattyBouvier/quant.sf",
+  "../Pipeline/Resultados/Quantified/SelmaBouvier/quant.sf"
 )
 
 

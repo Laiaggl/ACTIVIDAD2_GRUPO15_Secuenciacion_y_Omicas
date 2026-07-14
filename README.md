@@ -2,6 +2,8 @@
 ![Conda](https://img.shields.io/badge/Env-Conda-3498DB?style=for-the-badge&logo=anaconda&logoColor=white)
 ![R Language](https://img.shields.io/badge/Language-R-276DC3?style=for-the-badge&logo=r&logoColor=white)
 ![Bioconductor](https://img.shields.io/badge/PackageManagement-Bioconductor-blueviolet?style=for-the-badge&logo=bioconductor&logoColor=white)
+![Nextflow](https://img.shields.io/badge/Pipeline-Nextflow-24B36B?style=for-the-badge&logo=nextflow&logoColor=white)
+![Docker](https://img.shields.io/badge/Container-Docker-blue?style=for-the-badge&logo=docker&logoColor=white)
 ![FastQC](https://img.shields.io/badge/QualityControl-FastQC-blue?style=for-the-badge)
 ![Fastp](https://img.shields.io/badge/Filtering-Fastp-blue?style=for-the-badge)
 ![Salmon](https://img.shields.io/badge/Quantification-Salmon_-orange?style=for-the-badge)
@@ -23,7 +25,8 @@ El repositorio está organizado en las siguientes carpetas principales:
 
 * **Muestras:** Contiene los datos crudos de secuenciación pareada (`.fastq.gz`) de los individuos del estudio. 
 * **Referencias:** Almacena la secuencia FASTA del genoma de referencia y una base de datos local organizada por genes, con secuencias completas y reportes asociados a los 37 genes de obesidad evaluados. El archivo de mapeo `Transcrito_a_Gen.tsv` es indispensable para tximport en la conversión de transcritos a nivel de gen.
-* **Scripts:** Alberga las directrices de ejecución de control de calidad, filtrado y conteo y el código R para análisis estadístico de expresión diferencial y enriquecimiento. Esta carpeta tiene sus propias instrucciones en su archivo [README.md](./Scripts/README.md).
+* **Pipeline:** Alberga las directrices de ejecución de control de calidad, filtrado y conteo y el código R para análisis estadístico de expresión diferencial y enriquecimiento. Esta carpeta tiene sus propias instrucciones en su archivo [README.md](./Pipeline/README.md).
+* **Scripts:** Alberga ~~las directrices de ejecución de control de calidad, filtrado y conteo y~~ el código R para análisis estadístico de expresión diferencial y enriquecimiento. Esta carpeta tiene sus propias instrucciones en su archivo [README.md](./Scripts/README.md).
 * **Gráficos:** Reúne las salidas visuales del análisis, tales como diagramas de volcán (Volcano Plot), mapas de calor (Heatmap) y gráficos de puntos de enriquecimiento (Dotplot), para una rápida visualización.
 
 ## Discussión y Resultados del estudio

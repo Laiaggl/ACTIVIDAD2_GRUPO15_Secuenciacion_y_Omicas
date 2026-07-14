@@ -1,1 +1,8 @@
 .DS_Store
+.vscode
+
+#Nextflow work temp files exclusion
+.nextflow.log*
+.nextflow/
+Pipeline/work/
+Pipeline/Resultados/
